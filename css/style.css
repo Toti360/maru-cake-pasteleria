@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+/*font-family: 'Lobster Two', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+/*!---------------RESET--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!-------------------------HEADER-------------*/
+
+.header {
+    height: 100;
+    background-color: rgb(255, 192, 203);
+    padding: 2px 0 2px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-header img {
+    width: 140px;
+    height: 80px;
+    padding: 5px;
+}
+
+.menu-icono img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.menu-icono,
+#check {
+    display: none;
+}
+
+.logo-header a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-menu ul li:hover a {
+    color: white;
+    font-size: 17px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    color: rgba(168, 18, 123, 0.801);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*!---------------------------MAIN-------------------*/
+
+h1 {
+    color: black;
+    background-color: rgba(255, 192, 203, 0.623);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.carousel-caption a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.titulo-oculto {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.75s;
+}
+
+.contenedor-h1:hover .titulo-oculto {
+    margin-top: 10px;
+    visibility: visible;
+    opacity: 2;
+}
+
+section h2 {
+    color: black;
+    font-size: 55px;
+    font-family: 'Lobster Two', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px;
+}
+
+.herosec {
+    margin-top: 20px;
+}
+
+.herosec h2 {
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 55px;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+.herosec a {
+    background-color: rgba(0, 0, 0, 0.445);
+    border-color: black;
+    margin-top: 10px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.319);
+    padding: 5px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.carousel-caption:hover a {
+    background-color: rgba(168, 18, 123, 0.801);
+}
+
+.novedades p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+
+.novedades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px;
+    padding: 100p;
+}
+
+.grid-redes {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    gap: 5px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.grid-redes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s;
+}
+
+.grid-redes a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.grid-redes a {
+    overflow: hidden;
+}
+
+.caja-productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos h3 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.productos img {
+    width: 400px;
+    height: 400px;
+}
+
+.productos a:hover img {
+    transform: scale(1.025);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+}
+
+.productos {
+    text-align: center;
+    display: inline-block;
+    margin: 50px;
+}
+
+.horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.horarios p {
+    color: white;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.horarios span {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+}
+
+.nuestros-horarios {
+    background-image: url("../img/img13i.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.nuestros-horarios h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cta-wsp {
+    position: fixed;
+    bottom: 120px;
+    right: 60px;
+}
+
+.cta-wsp a:hover img {
+    transform: scale(1.05);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.delicias-aromas div p {
+    color: black;
+    width: 700px;
+    height: 130px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+.delicias-aromas div img {
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.delicias-aromas div p a,
+.celebracion div p a {
+    text-decoration: none;
+    color: rgba(168, 18, 123, 0.801);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+}
+
+.postres-bebidas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.delicias-aromas a:hover,
+.celebracion a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.celebracion div {
+    width: 100%;
+    height: 500px;
+    padding: 30px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.celebracion div p {
+    width: 500px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.celebracion div img {
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.testimonios div p {
+    width: 300px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 10px;
+}
+
+.testimonios div img {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+}
+
+.testimonios h2 {
+    color: black;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.testimonios div {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.clientes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    text-align: justify
+}
+
+.video-container {
+    position: relative;
+}
+
+video {
+    width: 100%;
+}
+
+.video-container p {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.blog div {
+    width: 90%;
+    height: 500;
+    margin: 30px 100px 50px 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.blog div img {
+    width: 500px;
+    height: 350px;
+}
+
+.blog div p {
+    width: 1000px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 30px;
+}
+
+.blog h2 {
+    color: black;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    margin: 100px 50px;
+    text-align: center;
+}
+
+.carta {
+    background-color: rgba(252, 236, 218, 0.61);
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    padding: 8px 0 8px 0;
+    margin: 30px 0 30px 0;
+    margin-inline: auto;
+}
+
+.carta div h3 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.carta div ul li {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+
+.donde {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+.donde h3 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.datos-eventos-personales h3 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.datos-eventos-personales p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+}
+
+.formularios {
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(252, 236, 218, 0.61);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(255, 192, 203);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+}
+
+.fuente-form {
+    font-size: 15px;
+}
+
+/*!----------------------------FOOTER-------------------*/
+footer {
+    background-color: rgba(233, 146, 161, 0.637);
+    margin-top: 50px;
+}
+
+.pie {
+    background-color: rgba(184, 33, 83, 0.548);
+    align-items: auto;
+}
+
+.pie ul {
+    list-style: none;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    padding: 0px 20px 0px 20px;
+}
+
+.pie h3 {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer div h2 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.logo-redes img {
+    color: rgba(184, 33, 83, 0.548);
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+
+}
+
+.logo-redes iframe {
+    width: 175px;
+    height: 75px;
+}
+
+.logo-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*!------------------------MEDIA QUERY-----------------------*/
+
+@media screen and (max-width:1680px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1625px) {
+    .productos img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .herosec h2 {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .celebracion div {
+        width: 100%;
+        height: 650px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .celebracion p,
+    .celebracion img {
+        width: 80%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .grid-redes {
+        width: 80%;
+        grid-auto-rows: 300px;
+        gap: 5px;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .caja-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .postres-bebidas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog div {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .blog div img {
+        width: 450px;
+        height: 250px;
+        margin: 7px;
+        padding: 7px;
+        align-self: center
+    }
+
+    .blog div p {
+        width: 450px;
+        height: 350px;
+        overflow: scroll;
+        margin: 7px;
+        padding: 7px;
+        align-self: center
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    h1 {
+        font-size: 16px;
+        width: bold;
+    }
+
+    section h2,
+    .blog h2,
+    .testimonios h2 {
+        font-size: 35px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pie ul {
+        height: 105px;
+        margin-bottom: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pie ul li {
+        justify-self: center;
+    }
+
+    .novedades {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .delicias-aromas div p {
+        width: 350px;
+        height: 250px;
+    }
+
+    .video-container p {
+        font-size: 20px;
+    }
+
+    .donde {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carta div ul li {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn :hover img {
+        box-shadow: 0 0 12px rgba(237, 3, 237, 0.576);
+    }
+
+    .menu-icono {
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .menu-icono img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu i {
+        color: rgba(237, 3, 237, 0.575);
+    }
+
+    .nav-menu ul {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(37, 37, 37);
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+
+    .nav-menu ul li {
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        transition: all .25s;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 13px;
+        width: bold;
+    }
+
+    .herosec h2 {
+        font-size: 25px;
+    }
+
+    .novedades p {
+        width: 300px;
+        height: 400px;
+    }
+
+    .delicias-aromas div p {
+        width: 250px;
+        height: 250px;
+    }
+
+    .delicias-aromas div img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .video-container p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .celebracion div {
+        width: 250px;
+    }
+
+    .celebracion p {
+        width: auto;
+        height: auto;
+    }
+
+    .celebracion img {
+        width: auto;
+        width: auto;
+    }
+
+    .carta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datos-eventos-personales p {
+        font-size: 13px;
+    }
+
+    .donde iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .donde h3,
+    .formularios h3 {
+        font-size: 15px;
+    }
+
+    .formularios,
+    .carta {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .grid-redes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 5px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .novedades p {
+        display: none;
+    }
+
+    .carousel-caption h2 {
+        font-size: 18px;
+        width: bold;
+        margin-bottom: 25px;
+    }
+
+    .carousel-caption a {
+        font-size: 10px;
+    }
+
+    .productos img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .logo-redes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horarios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonios div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog div img {
+        width: 300px;
+        height: 200px;
+        align-self: center;
+    }
+
+    .blog div p {
+        display: none;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 250px;
+        padding: auto;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    .herosec h2 {
+        display: none;
+    }
+
+}
