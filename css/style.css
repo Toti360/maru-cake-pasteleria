@@ -18,7 +18,7 @@ font-family: 'Raleway', sans-serif;*/
     padding: 2px 0 2px 10px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 .logo-header img {
@@ -45,7 +45,6 @@ font-family: 'Raleway', sans-serif;*/
 
 .nav-menu ul li:hover a {
     color: white;
-    font-size: 17px;
 }
 
 .header nav {
@@ -71,25 +70,32 @@ li {
 }
 
 a {
-    color: rgba(168, 18, 123, 0.801);
+    color: rgba(168, 18, 123, 0.8);
     text-decoration: none;
     font-weight: bold;
 }
 
+
+
 /*!---------------------------MAIN-------------------*/
 
+
 h1 {
-    color: black;
-    background-color: rgba(255, 192, 203, 0.623);
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lobster Two', sans-serif;
+    color: rgba(168, 18, 123, 0.452);
     text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 8px;
 }
 
-.carousel-caption a {
+.titulo-oculto {
+    color: black;
+    background-color: rgba(255, 192, 203, 0.623);
+    font-size: 30px;
+    font-weight: 300;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    text-align: center;
 }
 
 .titulo-oculto {
@@ -97,10 +103,15 @@ h1 {
     transition: visibility 0s, opacity 0.75s;
 }
 
-.contenedor-h1:hover .titulo-oculto {
+.contenedor-p:hover p {
     margin-top: 10px;
     visibility: visible;
     opacity: 2;
+}
+
+.carousel-caption a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 
 section h2 {
@@ -109,7 +120,7 @@ section h2 {
     font-family: 'Lobster Two', sans-serif;
     font-weight: 100;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
 }
 
 .herosec {
@@ -124,7 +135,7 @@ section h2 {
 }
 
 .herosec a {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.644);
     border-color: black;
     margin-top: 10px;
 }
@@ -226,7 +237,7 @@ section h2 {
 }
 
 .horarios span {
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.589);
     border-radius: 10px;
 }
 
@@ -250,18 +261,6 @@ section h2 {
 .nuestros-horarios h3 {
     font-size: 30px;
     font-weight: bold;
-}
-
-.cta-wsp {
-    position: fixed;
-    bottom: 120px;
-    right: 60px;
-}
-
-.cta-wsp a:hover img {
-    transform: scale(1.05);
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
 }
 
 .delicias-aromas div p {
@@ -382,7 +381,7 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.658);
     border-radius: 10px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -397,7 +396,7 @@ video {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     align-items: center;
 }
 
@@ -432,50 +431,6 @@ video {
     font-size: 50px;
     font-weight: 200;
     margin: 100px 50px;
-    text-align: center;
-}
-
-.carta {
-    background-color: rgba(252, 236, 218, 0.61);
-    width: 50%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: justify;
-    padding: 8px 0 8px 0;
-    margin: 30px 0 30px 0;
-    margin-inline: auto;
-}
-
-.carta div h3 {
-    color: black;
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-}
-
-.carta div ul li {
-    color: black;
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    text-align: justify;
-    padding: 5px;
-}
-
-.donde {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px 0 50px 0;
-}
-
-.donde h3 {
-    color: black;
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
     text-align: center;
 }
 
@@ -544,6 +499,74 @@ input[type="reset"]:hover {
     font-size: 15px;
 }
 
+.carta {
+    background-color: rgba(252, 236, 218, 0.61);
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    padding: 8px 0 8px 0;
+    margin: 30px 0 30px 0;
+    margin-inline: auto;
+}
+
+.carta div h3 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.carta div ul li {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+
+.donde h3 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.donde {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+.rotacion {
+    perspective: 800px;
+}
+
+.contenedor-rotativo {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 400px;
+    height: 300px;
+    transition: transform 1.25s;
+}
+
+.contenedor-rotativo:hover {
+    transform: rotateY(180deg);
+}
+
+.iframe-rotativo,
+.imagen-estatica {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    backface-visibility: hidden;
+}
+
 /*!----------------------------FOOTER-------------------*/
 footer {
     background-color: rgba(233, 146, 161, 0.637);
@@ -594,7 +617,7 @@ footer div h2 {
 }
 
 .logo-redes iframe {
-    width: 175px;
+    width: 300px;
     height: 75px;
 }
 
@@ -605,12 +628,6 @@ footer div h2 {
 }
 
 /*!------------------------MEDIA QUERY-----------------------*/
-
-@media screen and (max-width:1680px) {
-    h1 {
-        font-size: 30px;
-    }
-}
 
 @media screen and (max-width:1625px) {
     .productos img {
@@ -624,7 +641,7 @@ footer div h2 {
         font-size: 40px;
     }
 
-    h1 {
+    .titulo-oculto {
         font-size: 25px;
     }
 
@@ -652,7 +669,7 @@ footer div h2 {
         margin-bottom: 35px;
     }
 
-    h1 {
+    .titulo-oculto {
         font-size: 20px;
     }
 
@@ -699,7 +716,7 @@ footer div h2 {
 }
 
 @media screen and (max-width:950px) {
-    h1 {
+    .titulo-oculto {
         font-size: 16px;
         width: bold;
     }
@@ -729,6 +746,8 @@ footer div h2 {
     .novedades {
         display: flex;
         flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 
     .delicias-aromas div p {
@@ -745,10 +764,26 @@ footer div h2 {
         flex-direction: column;
     }
 
+    .contenedor-rotativo {
+        width: 300px;
+        height: 200px;
+    }
+
+    .iframe-rotativo,
+    .imagen-estatica {
+        width: 300px;
+        height: 200px;
+    }
+
     .carta div ul li {
         font-size: 10px;
     }
+
+    .logo-redes iframe {
+        width: 200px;
+    }
 }
+
 
 @media screen and (max-width:765px) {
     .checkbtn {
@@ -804,7 +839,7 @@ footer div h2 {
         flex-direction: row;
     }
 
-    h1 {
+    .titulo-oculto {
         font-size: 13px;
         width: bold;
     }
@@ -819,8 +854,8 @@ footer div h2 {
     }
 
     .delicias-aromas div p {
-        width: 250px;
-        height: 250px;
+        margin-bottom: 5px;
+        width: 320px;
     }
 
     .delicias-aromas div img {
@@ -835,18 +870,13 @@ footer div h2 {
 
 @media screen and (max-width:600px) {
 
-    .celebracion div {
-        width: 250px;
-    }
-
-    .celebracion p {
-        width: auto;
-        height: auto;
-    }
-
-    .celebracion img {
-        width: auto;
-        width: auto;
+    .celebracion div,
+    .celebracion div p,
+    .celebracion div img {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0 auto;
+        margin-bottom: 5px;
     }
 
     .carta {
@@ -856,11 +886,6 @@ footer div h2 {
 
     .datos-eventos-personales p {
         font-size: 13px;
-    }
-
-    .donde iframe {
-        width: 300px;
-        height: 200px;
     }
 
     .donde h3,
@@ -875,6 +900,10 @@ footer div h2 {
 }
 
 @media screen and (max-width:500px) {
+    h1 {
+        font-size: 30px;
+    }
+
     .grid-redes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -895,7 +924,8 @@ footer div h2 {
     }
 
     .carousel-caption a {
-        font-size: 10px;
+        font-size: 13px;
+        margin-top: 5px;
     }
 
     .productos img {
