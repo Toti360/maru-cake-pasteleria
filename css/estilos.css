@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&family=Raleway:wght@100;200;300;400;500;600&display=swap");
+/*font-family: 'Lobster Two', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+/*!---------------RESET--------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: 'Lobster Two', sans-serif;
+  color: rgba(168, 18, 123, 0.452);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 8px; }
+
+section h2 {
+  color: black;
+  font-size: 55px;
+  font-family: 'Lobster Two', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin: 15px; }
+
+.carousel-caption a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px; }
+
+.herosec {
+  margin-top: 20px; }
+
+.herosec h2 {
+  font-family: 'Lobster Two', sans-serif;
+  font-size: 55px;
+  font-weight: 100;
+  color: whitesmoke; }
+
+.herosec a {
+  background-color: rgba(0, 0, 0, 0.644);
+  border-color: black;
+  margin-top: 10px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.319);
+  padding: 5px;
+  margin-bottom: 50px;
+  border-radius: 8px; }
+
+.carousel-caption:hover a {
+  background-color: rgba(168, 18, 123, 0.801); }
+
+.datos-eventos-personales h3 {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 20px; }
+
+.datos-eventos-personales p {
+  color: black;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 20px 30px 20px 30px; }
+
+.formularios {
+  width: 50%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(252, 236, 218, 0.61);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 18px; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 15px; }
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: pink;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px; }
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575); }
+
+.fuente-form {
+  font-size: 15px; }
+
+.header {
+  height: 100;
+  background-color: pink;
+  padding: 2px 0 2px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 3; }
+  .header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; }
+    .header nav .logo-header a {
+      display: inline-block;
+      margin-left: 20px; }
+      .header nav .logo-header a img {
+        width: 140px;
+        height: 80px;
+        padding: 5px; }
+    .header nav .nav-menu #check {
+      display: none; }
+    .header nav .nav-menu .checkbtn .menu-icono {
+      display: none; }
+      .header nav .nav-menu .checkbtn .menu-icono img {
+        width: 30px;
+        height: 30px;
+        border-radius: 3px; }
+    .header nav ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 15px;
+      text-align: center;
+      margin-right: 20px; }
+      .header nav ul li {
+        margin-right: 30px; }
+        .header nav ul li a {
+          color: rgba(168, 18, 123, 0.8);
+          text-decoration: none;
+          font-weight: bold; }
+          .header nav ul li a:hover {
+            color: white; }
+
+main .contenedor-p p {
+  color: black;
+  background-color: rgba(255, 192, 203, 0.623);
+  font-size: 32px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s; }
+  main .contenedor-p p:hover {
+    opacity: 1; }
+
+main section .novedades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 100px; }
+  main section .novedades p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 50%;
+    height: auto; }
+
+main section .grid-redes {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+  gap: 5px;
+  margin: auto;
+  margin-bottom: 50px; }
+  main section .grid-redes a {
+    overflow: hidden; }
+    main section .grid-redes a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.25s; }
+      main section .grid-redes a img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575); }
+
+main .caja-productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .caja-productos .productos {
+    text-align: center;
+    display: inline-block;
+    margin: 50px; }
+    main .caja-productos .productos h3 {
+      color: black;
+      font-family: 'Raleway', sans-serif;
+      font-size: 40px;
+      font-weight: 400; }
+    main .caja-productos .productos a img {
+      width: 400px;
+      height: 400px;
+      border-radius: 12px;
+      transition: transform 0.25s; }
+      main .caja-productos .productos a img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
+
+main .nuestros-horarios {
+  background-image: url("../img/img13i.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  padding-top: 18px;
+  padding-bottom: 18px; }
+  main .nuestros-horarios h3 {
+    font-size: 30px;
+    font-weight: bold; }
+  main .nuestros-horarios .horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    main .nuestros-horarios .horarios span {
+      background-color: rgba(0, 0, 0, 0.589);
+      border-radius: 10px; }
+      main .nuestros-horarios .horarios span p {
+        color: white;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500; }
+
+main .delicias-aromas .postres-bebidas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  text-align: center; }
+  main .delicias-aromas .postres-bebidas img {
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
+  main .delicias-aromas .postres-bebidas p {
+    color: black;
+    width: 700px;
+    height: 130px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 10px; }
+    main .delicias-aromas .postres-bebidas p a {
+      text-decoration: none;
+      color: rgba(168, 18, 123, 0.801);
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      padding: 5px; }
+      main .delicias-aromas .postres-bebidas p a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575); }
+
+main .celebracion div {
+  width: 100%;
+  height: 500px;
+  padding: 30px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+  main .celebracion div img {
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
+  main .celebracion div p {
+    width: 500px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
+    main .celebracion div p a {
+      text-decoration: none;
+      color: rgba(168, 18, 123, 0.801);
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      padding: 5px; }
+      main .celebracion div p a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575); }
+
+main .testimonios h2 {
+  color: black;
+  font-family: 'Lobster Two', sans-serif;
+  font-size: 50px;
+  font-weight: 200; }
+
+main .testimonios .clientes {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  margin: auto;
+  margin-left: 40px;
+  text-align: center; }
+  main .testimonios .clientes img {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    border-radius: 10px; }
+  main .testimonios .clientes p {
+    width: 300px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 10px; }
+
+main .nosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-top: 10px;
+  align-items: center; }
+  main .nosotros .video-container {
+    position: relative; }
+    main .nosotros .video-container video {
+      width: 100%;
+      border-radius: 13px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
+    main .nosotros .video-container p {
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.658);
+      border-radius: 13px;
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      padding: 20px;
+      max-width: 100%; }
+
+main .blog h2 {
+  color: black;
+  font-family: 'Lobster Two', sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  margin: 70px 30px;
+  text-align: center; }
+
+main .blog div {
+  width: 90%;
+  height: 500;
+  margin: 30px 100px 50px 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify; }
+  main .blog div p {
+    width: 1000px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 30px; }
+  main .blog div a img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px; }
+
+main section .carta {
+  background-color: rgba(252, 236, 218, 0.61);
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: justify;
+  padding: 8px 0 8px 0;
+  margin: 30px 0 30px 0;
+  margin-inline: auto; }
+  main section .carta .bebidas h3,
+  main section .carta .postres h3 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
+  main section .carta .bebidas ul li,
+  main section .carta .postres ul li {
+    color: black;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    padding: 5px; }
+
+main section .donde {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0 50px 0; }
+  main section .donde div h3 {
+    color: black;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center; }
+  main section .donde div .rotacion {
+    perspective: 800px; }
+    main section .donde div .rotacion .contenedor-rotativo {
+      position: relative;
+      transform-style: preserve-3d;
+      width: 400px;
+      height: 300px;
+      transition: transform 1.5s; }
+      main section .donde div .rotacion .contenedor-rotativo:hover {
+        transform: rotateY(180deg); }
+      main section .donde div .rotacion .contenedor-rotativo .imagen-estatica {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        backface-visibility: hidden; }
+      main section .donde div .rotacion .contenedor-rotativo .iframe-rotativo {
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        backface-visibility: hidden;
+        background-color: transparent; }
+
+footer {
+  background-color: rgba(233, 146, 161, 0.637);
+  margin-top: 50px; }
+  footer .logo-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .logo-redes div h2 {
+      color: black;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300; }
+    footer .logo-redes div iframe {
+      width: 300px;
+      height: 75px; }
+    footer .logo-redes div h2 {
+      color: black;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300; }
+    footer .logo-redes div a img {
+      width: 70px;
+      height: 70px;
+      padding: 10px; }
+  footer .pie {
+    background-color: rgba(184, 33, 83, 0.548);
+    align-items: auto; }
+    footer .pie ul {
+      list-style: none;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .pie ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        padding: 0px 20px 0px 20px; }
+    footer .pie h3 {
+      color: black;
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      text-align: center; }
+
+@media screen and (max-width: 1450px) {
+  main .contenedor-p p {
+    font-size: 25px; }
+  main .caja-productos .productos a img {
+    width: 250px;
+    height: 250px; } }
+
+@media screen and (max-width: 1200px) {
+  main .contenedor-p p {
+    font-size: 20px; }
+  main .delicias-aromas .postres-bebidas {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }
+
+@media screen and (max-width: 980px) {
+  .header nav {
+    display: flex;
+    flex-direction: column; }
+  main .contenedor-p p {
+    font-size: 18px;
+    width: 300 bold; }
+  main .herosec .carousel-caption h2 {
+    font-size: 40px; }
+  main section .novedades {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 auto; }
+    main section .novedades p {
+      font-size: 17px;
+      width: 80%; }
+  main section .grid-redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    gap: 5px;
+    margin: auto;
+    margin-bottom: 50px; }
+  main .caja-productos {
+    flex-direction: column;
+    align-items: center; }
+    main .caja-productos .productos a img {
+      width: 380px;
+      height: 380px; }
+  main .celebracion div {
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+  main .blog div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto; }
+    main .blog div p {
+      width: 80%; }
+    main .blog div a img {
+      width: 400px;
+      height: 270px; }
+  main section .carta .bebidas ul li,
+  main section .carta .postres ul li {
+    font-size: 15px; }
+  main section .donde div h3 {
+    font-size: 20px; }
+  main section .donde div .rotacion .contenedor-rotativo {
+    width: 300px;
+    height: 200px; }
+    main section .donde div .rotacion .contenedor-rotativo .imagen-estatica,
+    main section .donde div .rotacion .contenedor-rotativo .iframe-rotativo {
+      width: 300px;
+      height: 200px; }
+  footer .logo-redes div iframe {
+    width: 200px; } }
+
+@media screen and (max-width: 720px) {
+  .header nav {
+    display: flex;
+    flex-direction: row; }
+    .header nav .nav-menu #check:checked ~ ul {
+      left: 0;
+      transition: all .25s; }
+      .header nav .nav-menu #check:checked ~ ul i {
+        color: rgba(237, 3, 237, 0.575); }
+    .header nav .nav-menu .checkbtn {
+      display: block; }
+      .header nav .nav-menu .checkbtn .menu-icono {
+        display: block;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        cursor: pointer; }
+        .header nav .nav-menu .checkbtn .menu-icono img {
+          width: 36px;
+          height: 36px; }
+          .header nav .nav-menu .checkbtn .menu-icono img:hover {
+            box-shadow: 0 0 12px rgba(237, 3, 237, 0.576); }
+    .header nav ul {
+      display: block;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: #252525;
+      width: 100%;
+      height: 100vh;
+      right: 0; }
+      .header nav ul li {
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        margin: 0; }
+  main .contenedor-p p {
+    font-size: 15px; }
+  main section h2,
+  main .blog h2,
+  main .testimonios h2 {
+    font-size: 40px; }
+  main .herosec .carousel-caption {
+    margin: 0; }
+    main .herosec .carousel-caption h2 {
+      font-size: 35px; }
+    main .herosec .carousel-caption a {
+      font-size: 12px; }
+  main section .grid-redes {
+    grid-auto-rows: 250px; }
+  main .caja-productos .productos a img {
+    width: 300px;
+    height: 300px; }
+  main .delicias-aromas .postres-bebidas {
+    padding: 30px; }
+    main .delicias-aromas .postres-bebidas img {
+      width: 300px;
+      height: 300px; }
+    main .delicias-aromas .postres-bebidas p {
+      width: 90%;
+      height: auto; }
+  main .celebracion div img {
+    width: 400px;
+    height: 250px;
+    margin: 30px; }
+  main .celebracion div p {
+    width: 90%;
+    height: auto; }
+  main .testimonios .clientes {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto; }
+  main .nosotros .video-container p {
+    font-size: 22px; }
+  main .blog div p {
+    font-size: 15px; }
+  main .formularios {
+    width: 90%; }
+  main section .carta {
+    width: 90%; }
+  main section .donde {
+    display: flex;
+    flex-direction: column; }
+  footer .logo-redes {
+    display: flex;
+    flex-direction: column; }
+    footer .logo-redes div h2 {
+      margin: 5px; }
+    footer .logo-redes div a img {
+      width: 50px;
+      height: 50px;
+      padding: 5px; }
+  footer .pie ul {
+    height: 105px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; }
+  footer .pie h3 {
+    margin-top: 5px; } }
+
+@media screen and (max-width: 500px) {
+  main .contenedor-p p {
+    font-size: 12px; }
+  main h1 .material-symbols-outlined {
+    display: none; }
+  main .herosec .carousel-caption h2 {
+    font-size: 20px; }
+  main .herosec .carousel-caption a {
+    font-size: 10px; }
+  main .nuestros-horarios .horarios {
+    display: flex;
+    flex-direction: column; }
+  main .delicias-aromas .postres-bebidas p {
+    font-size: 17px; }
+    main .delicias-aromas .postres-bebidas p a {
+      font-size: 17px; }
+  main .celebracion div {
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    padding: auto; }
+    main .celebracion div img {
+      width: 300px;
+      height: 200px; }
+    main .celebracion div p {
+      font-size: 17px; }
+      main .celebracion div p a {
+        font-size: 17px; }
+  main .nosotros .video-container p {
+    font-size: 15px; }
+  main .blog h2 {
+    margin: 10px; }
+  main .blog div p {
+    width: 90%;
+    margin: 10px; }
+  main .blog div a img {
+    width: 300px;
+    height: 180px; }
+  main .formularios .datos-eventos-personales h3,
+  main .formularios .datos-eventos-personales p {
+    font-size: 15px; }
+  main section .donde div h3 {
+    font-size: 18px; } }

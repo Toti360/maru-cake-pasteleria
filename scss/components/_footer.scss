@@ -1,0 +1,71 @@
+footer {
+    background-color: rgba(233, 146, 161, 0.637);
+    margin-top: 50px;
+
+    .logo-redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            h2 {
+                color: black;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+            }
+
+            iframe {
+                width: 300px;
+                height: 75px;
+            }
+        }
+
+        div {
+            h2 {
+                color: black;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 300;
+            }
+
+            a {
+                img {
+                    width: 70px;
+                    height: 70px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .pie {
+        background-color: rgba(184, 33, 83, 0.548);
+        align-items: auto;
+
+        ul {
+            list-style: none;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 12px;
+                    padding: 0px 20px 0px 20px;
+                }
+            }
+        }
+
+        h3 {
+            color: black;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}

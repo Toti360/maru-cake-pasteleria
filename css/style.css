@@ -89,29 +89,24 @@ h1 {
     margin-top: 8px;
 }
 
-.titulo-oculto {
+.contenedor-p p {
     color: black;
     background-color: rgba(255, 192, 203, 0.623);
     font-size: 30px;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    margin-top: 10px;
 }
 
-.titulo-oculto {
+.contenedor-p p {
     visibility: hidden;
-    transition: visibility 0s, opacity 0.75s;
+    transition: visibility 0.5s, opacity 2s;
 }
 
 .contenedor-p:hover p {
-    margin-top: 10px;
     visibility: visible;
     opacity: 2;
-}
-
-.carousel-caption a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
 }
 
 section h2 {
@@ -121,6 +116,11 @@ section h2 {
     font-weight: 100;
     text-align: center;
     margin: 15px;
+}
+
+.carousel-caption a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
 }
 
 .herosec {
@@ -210,10 +210,11 @@ section h2 {
 .productos img {
     width: 400px;
     height: 400px;
+    transition: transform 0.25s;
 }
 
 .productos a:hover img {
-    transform: scale(1.025);
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
 }
 
@@ -351,20 +352,14 @@ section h2 {
     font-weight: 200;
 }
 
-.testimonios div {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-}
-
 .clientes {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px;
-    text-align: justify
+    margin: auto;
+    margin-left: 40px;
+    text-align: center;
 }
 
 .video-container {
@@ -376,13 +371,13 @@ video {
 }
 
 .video-container p {
-    width: 70%;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.658);
-    border-radius: 10px;
+    border-radius: 13px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 30px;
@@ -552,7 +547,7 @@ input[type="reset"]:hover {
     transform-style: preserve-3d;
     width: 400px;
     height: 300px;
-    transition: transform 1.25s;
+    transition: transform 1.5s;
 }
 
 .contenedor-rotativo:hover {
@@ -609,7 +604,6 @@ footer div h2 {
 }
 
 .logo-redes img {
-    color: rgba(184, 33, 83, 0.548);
     width: 70px;
     height: 70px;
     padding: 10px;
