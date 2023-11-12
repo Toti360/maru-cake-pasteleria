@@ -12,7 +12,7 @@ font-family: 'Raleway', sans-serif;*/
 
 h1 {
     font-family: 'Lobster Two', sans-serif;
-    color: rgba(168, 18, 123, 0.452);
+    color: $color-h1;
     text-align: center;
     font-size: 40px;
     font-weight: 200;
@@ -20,7 +20,7 @@ h1 {
 }
 
 section h2 {
-    color: black;
+    color: nth($colores, 4);
     font-size: 55px;
     font-family: 'Lobster Two', sans-serif;
     font-weight: 100;
@@ -62,14 +62,14 @@ section h2 {
 }
 
 .datos-eventos-personales h3 {
-    color: black;
+    color: nth($colores, 4);
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 20px;
 }
 
 .datos-eventos-personales p {
-    color: black;
+    color: nth($colores, 4);
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -84,10 +84,10 @@ section h2 {
     align-items: center;
     background-color: rgba(252, 236, 218, 0.61);
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 10px nth($colores, 6);
     padding: 5px;
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: nth($colores, 4);
     font-size: 18px;
 }
 
@@ -106,7 +106,7 @@ select {
 
 input[type="submit"],
 input[type="reset"] {
-    background-color: rgb(255, 192, 203);
+    background-color: nth($colores, 1);
     color: white;
     padding: 8px 15px;
     border: none;
@@ -119,7 +119,7 @@ input[type="reset"] {
 input[type="submit"]:hover,
 input[type="reset"]:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+    box-shadow: 0 0 10px nth($colores, 7);
 }
 
 .fuente-form {

@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif;*/
 
 h1 {
   font-family: 'Lobster Two', sans-serif;
-  color: rgba(168, 18, 123, 0.452);
+  color: #df95c9;
   text-align: center;
   font-size: 40px;
   font-weight: 200;
@@ -71,7 +71,7 @@ section h2 {
   align-items: center;
   background-color: rgba(252, 236, 218, 0.61);
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
   padding: 5px;
   font-family: 'Raleway', sans-serif;
   color: black;
@@ -170,7 +170,7 @@ main section .novedades {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px 100px; }
+  margin: 50px 150px; }
   main section .novedades p {
     color: black;
     font-size: 20px;
@@ -363,7 +363,7 @@ main .nosotros {
       font-family: 'Raleway', sans-serif;
       text-align: center;
       font-size: 30px;
-      color: #fff;
+      color: white;
       padding: 20px;
       max-width: 100%; }
 
@@ -400,7 +400,7 @@ main section .carta {
   background-color: rgba(252, 236, 218, 0.61);
   width: 50%;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -478,7 +478,10 @@ footer {
     footer .logo-redes div a img {
       width: 70px;
       height: 70px;
-      padding: 10px; }
+      padding: 10px;
+      transition: 0.5s; }
+      footer .logo-redes div a img:hover {
+        transform: scale(1.15); }
   footer .pie {
     background-color: rgba(184, 33, 83, 0.548);
     align-items: auto; }
@@ -494,6 +497,8 @@ footer {
         font-family: 'Raleway', sans-serif;
         font-size: 12px;
         padding: 0px 20px 0px 20px; }
+        footer .pie ul li a:hover {
+          color: white; }
     footer .pie h3 {
       color: black;
       font-family: 'Raleway', sans-serif;
@@ -516,7 +521,7 @@ footer {
     text-align: center; } }
 
 @media screen and (max-width: 980px) {
-  .header nav {
+  .header nav, main section .novedades, main .caja-productos, main .celebracion div, main .blog div {
     display: flex;
     flex-direction: column; }
   main .contenedor-p p {
@@ -525,10 +530,9 @@ footer {
   main .herosec .carousel-caption h2 {
     font-size: 40px; }
   main section .novedades {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0 auto; }
+    align-content: center;
+    margin: auto;
+    padding: auto; }
     main section .novedades p {
       font-size: 17px;
       width: 80%; }
@@ -539,21 +543,14 @@ footer {
     gap: 5px;
     margin: auto;
     margin-bottom: 50px; }
-  main .caja-productos {
-    flex-direction: column;
-    align-items: center; }
-    main .caja-productos .productos a img {
-      width: 380px;
-      height: 380px; }
+  main .caja-productos .productos a img {
+    width: 380px;
+    height: 380px; }
   main .celebracion div {
     width: 100%;
     height: 650px;
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
+    margin: auto; }
   main .blog div {
-    display: flex;
-    flex-direction: column;
     width: 80%;
     margin: auto; }
     main .blog div p {

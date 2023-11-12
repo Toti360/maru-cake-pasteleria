@@ -38,10 +38,14 @@
 }
 
 @media screen and (max-width:980px) {
+    %encolumnar {
+        display: flex;
+        flex-direction: column;
+    }
+
     .header {
         nav {
-            display: flex;
-            flex-direction: column;
+            @extend %encolumnar;
         }
     }
 
@@ -64,10 +68,10 @@
 
         section {
             .novedades {
-                display: flex;
-                flex-wrap: wrap;
-                margin: 0 auto;
-                padding: 0 auto;
+                @extend %encolumnar;
+                align-content: center;
+                margin: auto;
+                padding: auto;
 
                 p {
                     font-size: 17px;
@@ -88,8 +92,7 @@
         }
 
         .caja-productos {
-            flex-direction: column;
-            align-items: center;
+            @extend %encolumnar;
 
             .productos {
                 a {
@@ -106,15 +109,13 @@
                 width: 100%;
                 height: 650px;
                 margin: auto;
-                display: flex;
-                flex-direction: column;
+                @extend %encolumnar;
             }
         }
 
         .blog {
             div {
-                display: flex;
-                flex-direction: column;
+                @extend %encolumnar;
                 width: 80%;
                 margin: auto;
 

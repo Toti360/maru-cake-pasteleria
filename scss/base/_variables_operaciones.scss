@@ -1,0 +1,9 @@
+$color-h1: rgb(223, 149, 201);
+
+$colores: rgb(255, 192, 203), pink, rgba(168, 18, 123, 0.8), black, white, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.575);
+
+@mixin flexbox ($displ, $justy, $alig) {
+    display: $displ;
+    justify-content: $justy;
+    align-items: $alig;
+}

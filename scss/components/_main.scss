@@ -2,7 +2,7 @@ main {
 
     .contenedor-p {
         p {
-            color: black;
+            color: nth($colores, 4);
             background-color: rgba(255, 192, 203, 0.623);
             font-size: 32px;
             font-weight: 300;
@@ -20,13 +20,11 @@ main {
 
     section {
         .novedades {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 50px 100px;
+            @include flexbox(flex, space-around, center);
+            margin: 50px 150px;
 
             p {
-                color: black;
+                color: nth($colores, 4);
                 font-size: 20px;
                 font-family: 'Raleway', sans-serif;
                 text-align: center;
@@ -55,7 +53,7 @@ main {
 
                     &:hover {
                         transform: scale(1.05);
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+                        box-shadow: 0 0 10px nth($colores, 7);
                     }
                 }
             }
@@ -63,9 +61,7 @@ main {
     }
 
     .caja-productos {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flexbox(flex, space-around, center);
 
         .productos {
             text-align: center;
@@ -73,7 +69,7 @@ main {
             margin: 50px;
 
             h3 {
-                color: black;
+                color: nth($colores, 4);
                 font-family: 'Raleway', sans-serif;
                 font-size: 40px;
                 font-weight: 400;
@@ -88,7 +84,7 @@ main {
 
                     &:hover {
                         transform: scale(1.05);
-                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.767);
+                        box-shadow: 0 0 15px nth($colores, 6);
                     }
                 }
             }
@@ -101,7 +97,7 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
-        color: white;
+        color: nth($colores, 5);
         font-family: 'Raleway', sans-serif;
         font-size: 50px;
         font-weight: 400;
@@ -117,16 +113,14 @@ main {
         }
 
         .horarios {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flexbox(flex, space-around, center);
 
             span {
                 background-color: rgba(0, 0, 0, 0.589);
                 border-radius: 10px;
 
                 p {
-                    color: white;
+                    color: nth($colores, 5);
                     font-size: 25px;
                     font-family: 'Raleway', sans-serif;
                     font-weight: 500;
@@ -138,9 +132,7 @@ main {
 
     .delicias-aromas {
         .postres-bebidas {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flexbox(flex, space-around, center);
             padding: 50px;
             text-align: center;
 
@@ -149,11 +141,11 @@ main {
                 height: 350px;
                 margin: 5px;
                 border-radius: 12px;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.767);
+                box-shadow: 0 0 15px nth($colores, 6);
             }
 
             p {
-                color: black;
+                color: nth($colores, 4);
                 width: 700px;
                 height: 130px;
                 font-size: 20px;
@@ -170,7 +162,7 @@ main {
 
                     &:hover {
                         transform: scale(1.05);
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+                        box-shadow: 0 0 10px nth($colores, 7);
                     }
                 }
             }
@@ -183,9 +175,7 @@ main {
             height: 500px;
             padding: 30px 0;
             margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flexbox(flex, space-around, center);
             text-align: center;
 
             img {
@@ -193,12 +183,12 @@ main {
                 height: 300px;
                 margin: 50px;
                 border-radius: 12px;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.767);
+                box-shadow: 0 0 15px nth($colores, 6);
             }
 
             p {
                 width: 500px;
-                color: black;
+                color: nth($colores, 4);
                 font-size: 20px;
                 font-family: 'Raleway', sans-serif;
                 text-align: center;
@@ -212,7 +202,7 @@ main {
 
                     &:hover {
                         transform: scale(1.05);
-                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
+                        box-shadow: 0 0 10px nth($colores, 7);
                     }
                 }
             }
@@ -221,16 +211,14 @@ main {
 
     .testimonios {
         h2 {
-            color: black;
+            color: nth($colores, 4);
             font-family: 'Lobster Two', sans-serif;
             font-size: 50px;
             font-weight: 200;
         }
 
         .clientes {
-            display: inline-flex;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexbox(inline-flex, space-evenly, center);
             padding: 50px;
             margin: auto;
             margin-left: 40px;
@@ -245,7 +233,7 @@ main {
 
             p {
                 width: 300px;
-                color: black;
+                color: nth($colores, 4);
                 font-size: 15px;
                 font-family: 'Raleway', sans-serif;
                 text-align: justify;
@@ -268,7 +256,7 @@ main {
             video {
                 width: 100%;
                 border-radius: 13px;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.767);
+                box-shadow: 0 0 15px nth($colores, 6);
             }
 
             p {
@@ -282,7 +270,7 @@ main {
                 font-family: 'Raleway', sans-serif;
                 text-align: center;
                 font-size: 30px;
-                color: #fff;
+                color: rgb(255, 255, 255);
                 padding: 20px;
                 max-width: 100%;
             }
@@ -291,7 +279,7 @@ main {
 
     .blog {
         h2 {
-            color: black;
+            color: nth($colores, 4);
             font-family: 'Lobster Two', sans-serif;
             font-size: 50px;
             font-weight: 200;
@@ -304,14 +292,12 @@ main {
             height: 500;
             margin: 30px 100px 50px 100px;
             text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flexbox(flex, space-between, center);
             text-align: justify;
 
             p {
                 width: 1000px;
-                color: black;
+                color: nth($colores, 4);
                 font-size: 20px;
                 font-family: 'Raleway', sans-serif;
                 text-align: justify;
@@ -334,10 +320,8 @@ main {
             background-color: rgba(252, 236, 218, 0.61);
             width: 50%;
             border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            box-shadow: 0 0 10px nth($colores, 6);
+            @include flexbox(flex, space-evenly, center);
             text-align: justify;
             padding: 8px 0 8px 0;
             margin: 30px 0 30px 0;
@@ -346,7 +330,7 @@ main {
             .bebidas,
             .postres {
                 h3 {
-                    color: black;
+                    color: nth($colores, 4);
                     font-size: 20px;
                     font-family: 'Raleway', sans-serif;
                     text-align: center;
@@ -354,7 +338,7 @@ main {
 
                 ul {
                     li {
-                        color: black;
+                        color: nth($colores, 4);
                         font-size: 20px;
                         font-family: 'Raleway', sans-serif;
                         text-align: justify;
@@ -367,14 +351,12 @@ main {
 
     section {
         .donde {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexbox(flex, space-evenly, center);
             margin: 50px 0 50px 0;
 
             div {
                 h3 {
-                    color: black;
+                    color: nth($colores, 4);
                     font-size: 25px;
                     font-family: 'Raleway', sans-serif;
                     font-weight: 500;
@@ -401,6 +383,7 @@ main {
                             height: 300px;
                             backface-visibility: hidden;
                         }
+
                         .iframe-rotativo {
                             position: absolute;
                             width: 400px;
