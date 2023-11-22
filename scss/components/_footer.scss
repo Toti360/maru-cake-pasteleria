@@ -2,10 +2,42 @@ footer {
     background-color: rgba(233, 146, 161, 0.637);
     margin-top: 50px;
 
+    .nuestros-horarios {
+        color: nth($colores, 4);
+        font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .horarios {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 10px;
+
+            span {
+                p {
+                    color: nth($colores, 4);
+                    font-size: 25px;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
     .logo-redes {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 10px;
+        background-color: rgba(192, 90, 124, 0.548);
 
         div {
             h2 {
@@ -16,7 +48,7 @@ footer {
             }
 
             iframe {
-                width: 300px;
+                width: 200px;
                 height: 75px;
             }
         }
@@ -35,6 +67,7 @@ footer {
                     height: 70px;
                     padding: 10px;
                     transition: 0.5s;
+
                     &:hover {
                         transform: scale(1.15);
                     }
@@ -61,6 +94,8 @@ footer {
                     font-family: 'Raleway', sans-serif;
                     font-size: 12px;
                     padding: 0px 20px 0px 20px;
+                    transition: 0.25s;
+
                     &:hover {
                         color: nth($colores, 5);
                     }

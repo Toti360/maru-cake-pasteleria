@@ -248,6 +248,10 @@
             }
         }
 
+        h1 {
+            font-size: 40px;
+        }
+
         section h2,
         .blog h2,
         .testimonios h2 {
@@ -362,6 +366,23 @@
 
 
     footer {
+        .nuestros-horarios {
+            h3 {
+                font-size: 25px;
+            }
+
+            .horarios {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
         .logo-redes {
             display: flex;
             flex-direction: column;
@@ -382,9 +403,11 @@
         }
 
         .pie {
+            padding-top: 8px;
+
             ul {
-                height: 105px;
-                margin-bottom: 5px;
+                height: 110px;
+                margin-bottom: 10px;
                 display: flex;
                 flex-direction: column;
                 margin: 0;

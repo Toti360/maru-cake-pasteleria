@@ -84,7 +84,7 @@ h1 {
     font-family: 'Lobster Two', sans-serif;
     color: rgba(168, 18, 123, 0.452);
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 200;
     margin-top: 8px;
 }
@@ -97,16 +97,6 @@ h1 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-top: 10px;
-}
-
-.contenedor-p p {
-    visibility: hidden;
-    transition: visibility 0.5s, opacity 2s;
-}
-
-.contenedor-p:hover p {
-    visibility: visible;
-    opacity: 2;
 }
 
 section h2 {
@@ -196,7 +186,7 @@ section h2 {
 
 .caja-productos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -205,15 +195,16 @@ section h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 400;
+    padding: 10px;
 }
 
 .productos img {
     width: 400px;
     height: 400px;
-    transition: transform 0.25s;
+
 }
 
-.productos a:hover img {
+.caja-productos .productos:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
 }
@@ -222,47 +213,14 @@ section h2 {
     text-align: center;
     display: inline-block;
     margin: 50px;
+    border: black solid 1.5px;
+    border-radius: 12px;
+    transition: transform 0.25s;
 }
 
-.horarios {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.horarios p {
-    color: white;
-    font-size: 25px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
 
-.horarios span {
-    background-color: rgba(0, 0, 0, 0.589);
-    border-radius: 10px;
-}
 
-.nuestros-horarios {
-    background-image: url("../img/img13i.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-}
-
-.nuestros-horarios h3 {
-    font-size: 30px;
-    font-weight: bold;
-}
 
 .delicias-aromas div p {
     color: black;
@@ -603,6 +561,35 @@ footer div h2 {
     font-weight: 300;
 }
 
+.horarios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.horarios p {
+    color: black;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.nuestros-horarios {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.nuestros-horarios h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .logo-redes img {
     width: 70px;
     height: 70px;
@@ -619,6 +606,8 @@ footer div h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 10px;
+    background-color: rgba(184, 64, 104, 0.548);
 }
 
 /*!------------------------MEDIA QUERY-----------------------*/

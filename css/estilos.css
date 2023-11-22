@@ -11,7 +11,7 @@ h1 {
   font-family: 'Lobster Two', sans-serif;
   color: #df95c9;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 200;
   margin-top: 8px; }
 
@@ -149,7 +149,8 @@ input[type="reset"]:hover {
         .header nav ul li a {
           color: rgba(168, 18, 123, 0.8);
           text-decoration: none;
-          font-weight: bold; }
+          font-weight: bold;
+          transition: 0.25s; }
           .header nav ul li a:hover {
             color: white; }
 
@@ -160,11 +161,7 @@ main .contenedor-p p {
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  margin-top: 10px;
-  opacity: 0;
-  transition: opacity 0.5s; }
-  main .contenedor-p p:hover {
-    opacity: 1; }
+  margin-top: 10px; }
 
 main section .novedades {
   display: flex;
@@ -193,63 +190,36 @@ main section .grid-redes {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.25s; }
+      transition: transform 0.5s; }
       main section .grid-redes a img:hover {
-        transform: scale(1.05);
+        transform: scale(1.1);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.575); }
 
 main .caja-productos {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
   main .caja-productos .productos {
     text-align: center;
     display: inline-block;
-    margin: 50px; }
+    margin: 50px;
+    border: black solid 1px;
+    border-radius: 12px;
+    transition: transform 0.25s; }
+    main .caja-productos .productos:hover {
+      transform: scale(1.075);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
     main .caja-productos .productos h3 {
       color: black;
       font-family: 'Raleway', sans-serif;
       font-size: 40px;
-      font-weight: 400; }
+      font-weight: 400;
+      padding: 10px; }
     main .caja-productos .productos a img {
       width: 400px;
       height: 400px;
       border-radius: 12px;
-      transition: transform 0.25s; }
-      main .caja-productos .productos a img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.767); }
-
-main .nuestros-horarios {
-  background-image: url("../img/img13i.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.651);
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
-  padding-top: 18px;
-  padding-bottom: 18px; }
-  main .nuestros-horarios h3 {
-    font-size: 30px;
-    font-weight: bold; }
-  main .nuestros-horarios .horarios {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    main .nuestros-horarios .horarios span {
-      background-color: rgba(0, 0, 0, 0.589);
-      border-radius: 10px; }
-      main .nuestros-horarios .horarios span p {
-        color: white;
-        font-size: 25px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500; }
+      transition: transform 0.5s; }
 
 main .delicias-aromas .postres-bebidas {
   display: flex;
@@ -287,7 +257,7 @@ main .celebracion div {
   padding: 30px 0;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center; }
   main .celebracion div img {
@@ -322,13 +292,13 @@ main .testimonios .clientes {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 50px;
+  padding: 30px;
   margin: auto;
   margin-left: 40px;
   text-align: center; }
   main .testimonios .clientes img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin: 15px;
     border-radius: 10px; }
   main .testimonios .clientes p {
@@ -433,42 +403,68 @@ main section .donde {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     text-align: center; }
-  main section .donde div .rotacion {
-    perspective: 800px; }
-    main section .donde div .rotacion .contenedor-rotativo {
-      position: relative;
-      transform-style: preserve-3d;
+  main section .donde div .rotacion .contenedor-rotativo {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 400px;
+    height: 300px;
+    transition: transform 2s; }
+    main section .donde div .rotacion .contenedor-rotativo:hover {
+      transform: rotateY(180deg); }
+    main section .donde div .rotacion .contenedor-rotativo .contenedor-rotativo:active {
+      transition: none;
+      transform: rotateY(0deg); }
+    main section .donde div .rotacion .contenedor-rotativo .iframe-rotativo {
+      position: absolute;
+      z-index: 2;
       width: 400px;
       height: 300px;
-      transition: transform 1.5s; }
-      main section .donde div .rotacion .contenedor-rotativo:hover {
-        transform: rotateY(180deg); }
-      main section .donde div .rotacion .contenedor-rotativo .imagen-estatica {
-        position: absolute;
-        width: 400px;
-        height: 300px;
-        backface-visibility: hidden; }
-      main section .donde div .rotacion .contenedor-rotativo .iframe-rotativo {
-        position: absolute;
-        width: 400px;
-        height: 300px;
-        backface-visibility: hidden;
-        background-color: transparent; }
+      backface-visibility: hidden;
+      background-color: transparent !important; }
+    main section .donde div .rotacion .contenedor-rotativo .imagen-estatica {
+      position: absolute;
+      z-index: 1;
+      width: 400px;
+      height: 300px;
+      backface-visibility: hidden;
+      background-color: transparent !important; }
 
 footer {
   background-color: rgba(233, 146, 161, 0.637);
   margin-top: 50px; }
+  footer .nuestros-horarios {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px; }
+    footer .nuestros-horarios h3 {
+      font-size: 30px; }
+    footer .nuestros-horarios .horarios {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 10px; }
+      footer .nuestros-horarios .horarios span p {
+        color: black;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400; }
   footer .logo-redes {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: rgba(192, 90, 124, 0.548); }
     footer .logo-redes div h2 {
       color: black;
       font-size: 20px;
       font-family: 'Raleway', sans-serif;
       font-weight: 300; }
     footer .logo-redes div iframe {
-      width: 300px;
+      width: 200px;
       height: 75px; }
     footer .logo-redes div h2 {
       color: black;
@@ -496,7 +492,8 @@ footer {
         color: black;
         font-family: 'Raleway', sans-serif;
         font-size: 12px;
-        padding: 0px 20px 0px 20px; }
+        padding: 0px 20px 0px 20px;
+        transition: 0.25s; }
         footer .pie ul li a:hover {
           color: white; }
     footer .pie h3 {
@@ -611,6 +608,8 @@ footer {
         margin: 0; }
   main .contenedor-p p {
     font-size: 15px; }
+  main h1 {
+    font-size: 40px; }
   main section h2,
   main .blog h2,
   main .testimonios h2 {
@@ -657,6 +656,13 @@ footer {
   main section .donde {
     display: flex;
     flex-direction: column; }
+  footer .nuestros-horarios h3 {
+    font-size: 25px; }
+  footer .nuestros-horarios .horarios {
+    display: flex;
+    flex-direction: column; }
+    footer .nuestros-horarios .horarios span p {
+      font-size: 20px; }
   footer .logo-redes {
     display: flex;
     flex-direction: column; }
@@ -666,15 +672,17 @@ footer {
       width: 50px;
       height: 50px;
       padding: 5px; }
-  footer .pie ul {
-    height: 105px;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0; }
-  footer .pie h3 {
-    margin-top: 5px; } }
+  footer .pie {
+    padding-top: 8px; }
+    footer .pie ul {
+      height: 110px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0; }
+    footer .pie h3 {
+      margin-top: 5px; } }
 
 @media screen and (max-width: 500px) {
   main .contenedor-p p {

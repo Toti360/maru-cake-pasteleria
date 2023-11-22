@@ -60,6 +60,7 @@
                     color: nth($colores, 3);
                     text-decoration: none;
                     font-weight: bold;
+                    transition: 0.25s;
 
                     &:hover {
                         color: nth($colores, 5);
